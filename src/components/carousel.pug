@@ -1,0 +1,47 @@
+- var testimonial1 = "I really like this game.. the graphics and visual arts are amazing!"
+
+section.carousel-block
+    .container 
+        .row
+            .col-12
+                .d-flex.position-absolute.carousel-block__top-image: img.img-fluid(src="./img/icon_clock.png", alt="alt")
+                #carousel.carousel.my-5.mx-auto.slide(data-ride="carousel")
+                    .carousel-inner
+                        .carousel-item.text-center.active
+                            .col-12.d-flex.flex-column.flex-md-row.justify-content-center.align-items-center.no-gutters.testimonial
+                                .d-flex.col-md-3.flex-column.justify-content-center.align-items-center.no-gutters
+                                    .testimonial__pic: img.img-fluid(src="./img/ava.png", alt="avatar")
+                                .d-flex.col-md-9.flex-column.justify-content-center.align-items-center.align-items-md-start.no-gutters.testimonial__wrapper
+                                    .d-flex.flex-column.justufy-content-center.align-items-center.align-items-md-start.testimonial__rate
+                                        .testimonial__rating
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                        .my-2.testimonial__username Ad****a
+                                    .d-none.d-lg-flex.flex-lg-column.my-3.testimonial__text #{testimonial1}
+                            .col-10.offset-1.d-flex.d-lg-none.my-3.testimonial__text.testimonial__text--mini #{testimonial1}
+
+                        .carousel-item.text-center
+                            .col-12.d-flex.flex-column.flex-md-row.justify-content-center.align-items-center.no-gutters.testimonial
+                                .d-flex.col-md-3.flex-column.justify-content-center.align-items-center.no-gutters
+                                    .testimonial__pic: img.img-fluid(src="./img/ava.png", alt="avatar")
+                                .d-flex.col-md-9.flex-column.justify-content-center.align-items-center.align-items-md-start.no-gutters.testimonial__wrapper
+                                    .d-flex.flex-column.justufy-content-center.align-items-center.align-items-md-start.testimonial__rate
+                                        .testimonial__rating
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                        .my-2.testimonial__username Ad****a
+                                    .d-none.d-lg-flex.flex-lg-column.my-3.testimonial__text #{testimonial1}
+                            .col-10.offset-1.d-flex.d-lg-none.my-3.testimonial__text.testimonial__text--mini #{testimonial1}
+
+                    a.carousel-control-prev.wow.animate__slideInLeft(href="#carousel" role="button" data-slide="prev", data-wow-duration="0.5s", data-wow-offset="200")
+                        span.carousel-control-prev-icon(aria-hidden="true")
+                        span.sr-only Previous
+                    a.carousel-control-next.wow.animate__slideInRight(href="#carousel" role="button" data-slide="next", data-wow-duration="0.5s", data-wow-offset="200")
+                        span.carousel-control-next-icon(aria-hidden="true")
+                        span.sr-only Next

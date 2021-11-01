@@ -1,0 +1,79 @@
+// carousel
+.carousel
+    &-block
+        background: #FFEDD6
+        margin-top: -2.5rem
+        border-radius: 2.5rem 2.5rem 0 0
+        position: relative
+        z-index: 1
+        padding: 1.875rem 0 2.5rem
+
+        &__top-image
+            max-width: 100%
+            z-index: 5
+            top: -90px
+            left: -150px
+            @media screen and ( max-width: 1199px )
+                max-width: 120px
+                top: -70px
+                left: -30px
+            @media screen and ( max-width: 767px )
+                max-width: 80px
+                top: -30px
+                left: 10px
+
+    &-control
+        &-prev, &-next
+            width: 5%
+            transition: .3s
+            @media screen and ( max-width: 767px )
+                top: -150px
+            &-icon
+                background-image: url(./../img/arrowr.svg)
+                width: 37px
+                height: 55px
+                @media screen and ( max-width: 991px )
+                    width: 27px
+                    height: 40px
+            &:hover
+                transition: .3s
+                &-icon
+                    fill: #FE9C0A
+        &-prev
+            transform: rotate(180deg)
+            left: -35px
+            @media screen and ( max-width: 991px )
+                left: 0px
+        &-next
+            right: -35px
+            @media screen and ( max-width: 991px )
+                right: -0px
+
+
+
+.testimonial
+    // margin: 5rem auto
+    &__pic
+        max-width: 120px
+        max-height: 120px
+        border-radius: 50%
+        overflow: hidden
+    &__username
+        font-size: 22px
+        font-weight: 500
+        color: $color_primary
+    &__text
+        font-size: 18px
+        line-height: 28px
+        color: $color_primary
+        padding: 20px 40px
+        background: #fff
+        border-radius: 32px 32px 32px 0
+        @media screen and ( max-width: 991px )
+            padding: 20px
+            border-radius: 0px 32px 32px 32px
+
+        @media screen and ( max-width: 575px )
+            padding: 16px
+        &--mini
+            border-radius:  0px 32px 32px 32px

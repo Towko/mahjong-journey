@@ -1,0 +1,47 @@
+// video-block
+.video
+    background: url(./../img/bg1fc.png)
+    background-size: cover
+    background-position: top center
+    overflow: hidden
+    margin-top: -2.5rem
+    border-radius: 2.5rem 2.5rem 0 0
+    position: relative
+    z-index: 1
+    padding: 1.875rem 0 2.5rem
+    h3
+        font-size: 1.75rem
+        line-height: 2.75rem
+        font-weight: 500
+        color: $color_primary
+    &-frame
+        // width: 734px
+        // height: 414px
+        // width: 857px
+        // height: 517px
+        width: 100%
+        background: url(./../img/wood-plug.png)
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        padding: 3rem 4rem
+        @media screen and ( max-width: 575px )
+            padding: 3rem 3rem
+        & > *
+            width: 100%
+            height: 100%
+            margin: auto
+            z-index: 5
+        // img
+        //     position: absolute
+        //     margin: auto
+        //     pointer-events: none
+        //     width: auto
+        //     height: auto
+    &-decor
+        top: 0
+        img
+            width: auto
+            z-index: 5
+            @media screen and ( max-width: 1200px )
+                width: 100%
