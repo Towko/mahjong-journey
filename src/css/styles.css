@@ -150,6 +150,9 @@ button {
   background: -o-linear-gradient(top, rgba(8, 36, 19, 0) 0%, #082413 100%);
   background: linear-gradient(180deg, rgba(8, 36, 19, 0) 0%, #082413 100%);
 }
+.header .parallax {
+  overflow: unset !important;
+}
 
 .main-screen {
   min-height: 430px;
@@ -235,6 +238,10 @@ button {
 .video-decor {
   top: 0;
 }
+.video-decor .active {
+  overflow: unset !important;
+  z-index: 5;
+}
 .video-decor img {
   width: auto;
   z-index: 5;
@@ -256,18 +263,62 @@ button {
   z-index: 1;
   padding: 1.875rem 0 2.5rem;
 }
-.animations-ico {
-  width: 120px;
+@media screen and (max-width: 767px) {
+  .animations {
+    padding: 1.875rem 0 5rem;
+  }
 }
-.animations .action-btn {
-  font-size: 2.25rem;
+.animations .clouds {
+  z-index: 5;
+  top: -20px;
+}
+.animations .clouds .cloud1 {
+  overflow: unset !important;
+  left: -100px;
+  max-width: 250px;
+}
+@media screen and (max-width: 991px) {
+  .animations .clouds .cloud1 {
+    max-width: 200px;
+  }
 }
 @media screen and (max-width: 767px) {
-  .animations .action-btn {
-    font-size: 3.75rem;
-    max-width: 300px;
-    margin-top: 30px;
+  .animations .clouds .cloud1 {
+    left: 0;
+    max-width: 120px;
   }
+}
+.animations .clouds .cloud2 {
+  overflow: unset !important;
+  right: -200px;
+  max-width: 330px;
+}
+@media screen and (max-width: 991px) {
+  .animations .clouds .cloud2 {
+    max-width: 260px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .animations .clouds .cloud2 {
+    right: 0;
+    max-width: 150px;
+  }
+}
+.animations .gif-block, .animations .info-block {
+  margin-top: 50px;
+}
+@media screen and (max-width: 991px) {
+  .animations .gif-block, .animations .info-block {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .animations .gif-block {
+    margin-top: 50px;
+  }
+}
+.animations-ico {
+  width: 120px;
 }
 .animations .title {
   font-size: 1.875rem;
@@ -292,6 +343,17 @@ button {
     font-size: 2rem;
   }
 }
+.animations .action-btn {
+  z-index: 10;
+  font-size: 2.25rem;
+}
+@media screen and (max-width: 767px) {
+  .animations .action-btn {
+    font-size: 3.75rem;
+    max-width: 300px;
+    margin-top: 30px;
+  }
+}
 
 .carousel-block {
   background: #FFEDD6;
@@ -306,6 +368,8 @@ button {
   z-index: 5;
   top: -90px;
   left: -150px;
+  min-height: 400px;
+  background: transparent;
 }
 @media screen and (max-width: 1199px) {
   .carousel-block__top-image {

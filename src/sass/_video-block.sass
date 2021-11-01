@@ -15,10 +15,6 @@
         font-weight: 500
         color: $color_primary
     &-frame
-        // width: 734px
-        // height: 414px
-        // width: 857px
-        // height: 517px
         width: 100%
         background: url(./../img/wood-plug.png)
         background-size: contain
@@ -32,14 +28,11 @@
             height: 100%
             margin: auto
             z-index: 5
-        // img
-        //     position: absolute
-        //     margin: auto
-        //     pointer-events: none
-        //     width: auto
-        //     height: auto
     &-decor
         top: 0
+        .active
+            overflow: unset !important
+            z-index: 5
         img
             width: auto
             z-index: 5

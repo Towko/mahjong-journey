@@ -4,7 +4,8 @@ section.carousel-block
     .container 
         .row
             .col-12
-                .d-flex.position-absolute.carousel-block__top-image: img.img-fluid(src="./img/icon_clock.png", alt="alt")
+                .d-flex.position-absolute.carousel-block__top-image.wow.animate__slideInLeft(data-wow-duration="2s", data-wow-offset="500")
+                    .parallax-inner: img.img-fluid(src="./img/icon_clock.png", alt="alt")
                 #carousel.carousel.my-5.mx-auto.slide(data-ride="carousel")
                     .carousel-inner
                         .carousel-item.text-center.active
@@ -23,6 +24,22 @@ section.carousel-block
                                     .d-none.d-lg-flex.flex-lg-column.my-3.testimonial__text #{testimonial1}
                             .col-10.offset-1.d-flex.d-lg-none.my-3.testimonial__text.testimonial__text--mini #{testimonial1}
 
+                        .carousel-item.text-center
+                            .col-12.d-flex.flex-column.flex-md-row.justify-content-center.align-items-center.no-gutters.testimonial
+                                .d-flex.col-md-3.flex-column.justify-content-center.align-items-center.no-gutters
+                                    .testimonial__pic: img.img-fluid(src="./img/ava.png", alt="avatar")
+                                .d-flex.col-md-9.flex-column.justify-content-center.align-items-center.align-items-md-start.no-gutters.testimonial__wrapper
+                                    .d-flex.flex-column.justufy-content-center.align-items-center.align-items-md-start.testimonial__rate
+                                        .testimonial__rating
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                            img(src="./img/star.png", alt="star")
+                                        .my-2.testimonial__username Ad****a
+                                    .d-none.d-lg-flex.flex-lg-column.my-3.testimonial__text #{testimonial1}
+                            .col-10.offset-1.d-flex.d-lg-none.my-3.testimonial__text.testimonial__text--mini #{testimonial1}
+                            
                         .carousel-item.text-center
                             .col-12.d-flex.flex-column.flex-md-row.justify-content-center.align-items-center.no-gutters.testimonial
                                 .d-flex.col-md-3.flex-column.justify-content-center.align-items-center.no-gutters
